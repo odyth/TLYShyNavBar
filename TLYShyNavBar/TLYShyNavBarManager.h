@@ -20,8 +20,10 @@
  *  viewController.shyNavManager = ...;
  *
  */
-
+@class TLYShyViewController;
 @interface TLYShyNavBarManager : NSObject
+
+@property (nonatomic, strong) TLYShyViewController *navBarController;
 
 /* The view controller that is part of the navigation stack
  * IMPORTANT: Must have access to navigationController

@@ -52,7 +52,6 @@ static inline CGFloat AACStatusBarHeight()
 
 @interface TLYShyNavBarManager () <UIScrollViewDelegate>
 
-@property (nonatomic, strong) TLYShyViewController *navBarController;
 @property (nonatomic, strong) TLYShyViewController *extensionController;
 
 @property (nonatomic, strong) TLYDelegateProxy *delegateProxy;
