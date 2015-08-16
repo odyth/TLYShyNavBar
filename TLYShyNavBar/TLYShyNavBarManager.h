@@ -33,7 +33,7 @@
 /* The scrollView subclass that will drive the contraction/expansion 
  * IMPORTANT: set this property AFTER assigning its delegate, if needed!
  */
-@property (nonatomic, weak) UIScrollView *scrollView;
+@property (nonatomic, strong) UIScrollView *scrollView;
 
 /* The extension view to be shown beneath the navbar
  */
@@ -43,6 +43,10 @@
  * allow the developer to adjust content offset as necessary.
  */
 @property (nonatomic, readonly) CGRect extensionViewBounds;
+
+/* Sticky extension view
+ */
+@property (nonatomic) BOOL stickyExtensionView;
 
 /* Control the resistance when scrolling up/down before the navbar 
  * expands/contracts again.
